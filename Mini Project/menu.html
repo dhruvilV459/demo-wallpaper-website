@@ -1,0 +1,85 @@
+<html>
+<head>
+  <style>
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: right;
+}
+
+li a, #dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover #dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+    right: 10px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+ /*   margin: auto;
+*/    text-align-last: left;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f3}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#con1{
+    text-align: center;
+    position: relative;
+    top: 2px;
+    color: black;
+    font-size: 14px;
+    font-family:monospace;
+}   
+    
+    
+</style>      
+</head>
+<body>
+ <ul>    
+  <li class="dropdown">
+    <!--<i class="fa fa-bars" id="dropbtn" style="font-size:40px"></i>
+      <a href="https://icons8.com/icon/68555/menu" id="dropbtn">Menu icon by Icons8</a>-->
+      <img src="icons/icons8-menu-26.png" id="dropbtn" style="height:20px; width:20px;">
+    <div class="dropdown-content">
+      <a href="signuphtml.php">Sign Up</a>
+      <a href="">About Us</a>
+      </div>
+  </li>
+      <li><a href="#" id="con1">Login</a></li> 
+       <li><a href="#" id="con1">Contact Us</a></li>
+</ul> 
+</body>
+</html>
